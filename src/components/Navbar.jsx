@@ -47,13 +47,13 @@ const Navbar = () => {
             <div className='flex flex-row items-center gap-2'>
 
                 <button onClick={() => navigate('/login')} className='bg-green-600 flex cursor-pointer flex-row items-center gap-2 text-white px-4 py-2 rounded hover:bg-green-700'> 
-                    <p>Sign In</p>
+                    <p className='font-semibold'>Sign In</p>
                     <IoMdLogIn className='text-white animate-ping' />
                 </button>
                 <FiMenu onClick={() => setIsOpen(!isOpen)} className='text-green-600 text-2xl md:hidden' />
             </div>
 
-            <div className={`absolute top-16 right-10 bg-black/50 w-60 backdrop-blur-xl border border-white/20 rounded-lg shadow-lg p-4 ${isOpen ? 'block' : 'hidden'} md:hidden`}>
+            <div className={`absolute top-18 right-10 bg-black/80 w-60 backdrop-blur-xl border border-white/20 rounded-lg shadow-lg p-4 ${isOpen ? 'block' : 'hidden'} md:hidden`}>
                 <nav className='flex flex-col items-center space-y-4'>
                     <p onClick={() => { navigate('/'); setIsOpen(!isOpen) }} className='text-white relative cursor-pointer text-lg font-semibold group'>Home
                         <span className="absolute left-0 bottom-0 h-0.5 bg-green-500 w-0 group-hover:w-full transition-all duration-300" />

@@ -89,20 +89,26 @@ const Products = () => {
                     })}
                 </div>
             </div>
-            <div className='w-full max-h-[35rem] md:h-full overflow-x-auto mt-4 scrollbar-hide'>
-                <h2 className="text-2xl text-white font-bold uppercase md:hidden block text-center ">Products</h2>
+            <div className="relative md:bottom-10 w-full mt-5">
+                <div className='md:absolute left-60 right-0  h-screen md:w-[80%] overflow-y-auto scrollbar-hide '>
+                    <h2 className="text-2xl text-white font-bold uppercase md:hidden block text-center">Products</h2>
 
-                <div className='grid left-60 top-20 md:absolute grid-cols-2 md:mt-20  overflow-x-auto srollbar-hide md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3 p-4'>
-                    <img src={product1} alt="" className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md' />
-                    <img src={product2} alt="" className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md' />
-                    <img src={product3} alt="" className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md' />
-                    <img src={product4} alt="" className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md' />
-                    <img src={product5} alt="" className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md' />
-                    <img src={product6} alt="" className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md' />
+                    <div className='grid  grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3 p-4'>
+                        {[product1, product2, product3, product4, product5, product6].map((product, index) => (
+                            <img
+                                key={index}
+                                src={product}
+                                alt={`product-${index}`}
+                                className='rounded-lg border border-white/20 bg-white/10 backdrop-blur-md w-full md:h-60 h-40'
+                            />
+                        ))}
                 </div>
             </div>
 
+            </div>
         </div>
+
+
     );
 };
 
