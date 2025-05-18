@@ -153,8 +153,8 @@ const Team = () => {
                 </div>
 
                 {memberPreview && selectedMember && (
-                    <div className='fixed inset-0 flex items-center   border-white/20 justify-center backdrop-blur-2xl  bg-black/70 z-50'>
-                        <div className='md:flex  md:w-2/3 w-80 md:h-1/2 rounded-xl  overflow-hidden shadow-2xl'>
+                    <div className='fixed inset-0 flex items-center  border-white/20 justify-center backdrop-blur-2xl w-full bg-black/70 z-50'>
+                        <div className='md:flex fixed md:w-180 w-85 md:h-1/2 rounded-xl  overflow-hidden shadow-2xl'>
 
                             <div className='relative md:w-1/2 w-full md:flex items-center justify-center p-0'>
                                 <video
@@ -177,13 +177,13 @@ const Team = () => {
 
                             <div className='md:w-1/2 w-full md:relative  bg-center  flex flex-col justify-center items-center'
                                 style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }}>
-                                <div className='flex flex-col items-center justify-center border-green-600 border-r w-full  h-full bg-white/10 backdrop-blur-md '>
+                                <div className='flex flex-col items-center justify-center border-green-600 md:border-r border-b  w-full  h-full bg-white/10 backdrop-blur-md '>
                                     <img src={selectedMember.image} alt="member" className='rounded-full md:block hidden border border-green-600 w-30 h-30' />
                                     <h3 className='text-center text-xl text-green-600 font-semibold'>{selectedMember.name}</h3>
                                     <p className='text-center text-white'>{selectedMember.role}</p>
                                     <p className='text-center text-white'>{selectedMember.education}</p>
                                     <p className='text-center text-white'>{selectedMember.experience}</p>
-                                    <div className='flex justify-center mt-2'>
+                                    <div className='flex justify-center mb-4 mt-2'>
                                         <a
                                             href={selectedMember.socialMedia.linkedin}
                                             target='_blank'
