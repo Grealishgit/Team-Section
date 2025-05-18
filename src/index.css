@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@import "tailwindcss";
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+@keyframes glow {
+    0%,100% {
+    box-shadow: 0 0 10px #4ade80, 0 0 10px #026d1be6, 0 0 10px #4ade80;
+    }
+    50% {
+      box-shadow: 0 0 20px #16a34a, 0 0 40px #16a34a, 0 0 60px #16a34a;
+    }
+  }
+  
