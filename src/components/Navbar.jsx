@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
+import { IoMdLogIn } from "react-icons/io";
 
 const Navbar = () => {
     const handleScroll = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
 
     return (
         <div className='fixed flex w-full top-0 z-80 justify-between items-center border-white/20 backdrop-blur-md bg-white/10 md:p-3 p-3'>
-            <div className='text-green-600 text-2xl font-bold'>
+            <div className='text-green-600 text-2xl font-bold animate-bounce' onClick={() => navigate('/')}>
                 Neuro
             </div>
             <nav className='md:flex hidden space-x-4'>
@@ -45,8 +46,9 @@ const Navbar = () => {
             </nav>
             <div className='flex flex-row items-center gap-2'>
 
-                <button onClick={() => navigate('/login')} className='bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700'>
+                <button onClick={() => navigate('/login')} className='bg-green-600 flex flex-row items-center gap-2 text-white px-4 py-2 rounded hover:bg-green-700'> 
                     <p>Sign In</p>
+                    <IoMdLogIn className='text-white animate-ping' />
                 </button>
                 <FiMenu onClick={() => setIsOpen(!isOpen)} className='text-green-600 text-2xl md:hidden' />
             </div>

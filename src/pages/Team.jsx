@@ -178,7 +178,7 @@ const Team = () => {
                             <div className='md:w-1/2 w-full md:relative  bg-center  flex flex-col justify-center items-center'
                                 style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }}>
                                 <div className='flex flex-col items-center justify-center border-green-600 md:border-r border-b  w-full  h-full bg-white/10 backdrop-blur-md '>
-                                    <img src={selectedMember.image} alt="member" className='rounded-full md:block hidden border border-green-600 w-30 h-30' />
+                                    <img src={selectedMember.image} alt="member" className='rounded-full md:block animate-bounce hidden border border-green-600 w-30 h-30' />
                                     <h3 className='text-center text-xl text-green-600 font-semibold'>{selectedMember.name}</h3>
                                     <p className='text-center text-white'>{selectedMember.role}</p>
                                     <p className='text-center text-white'>{selectedMember.education}</p>
