@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import secure from '../assets/secure (2).png'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const [isSignUp, setIsSignUp] = useState(false)
     const handleLogin = () => {
         setIsSignUp(!isSignUp)
     }
+    const navigate = useNavigate();
     return (
         <div className='flex fixed top-0 w-full  min-h-screen '>
             <div className='md:flex hidden relative w-1/2 items-center  justify-center min-h-screen '>
@@ -28,6 +30,7 @@ const Login = () => {
                         className="flex flex-col mx-2 bg-white/10 backdrop-blur-sm  p-6 w-100 space-y-4 rounded-lg border border-white/20 shadow-lg"
                         style={{ animation: 'glow 4s infinite ease-in-out' }}>
                         <h1 className='text-white text-3xl text-center font-bold'>Login</h1>
+                        <p onClick={() => navigate('/')} className='text-green-600 underline font-semibold cursor-pointer'>Return Home</p>
 
                         <div>
                             <label className='text-white text-lg'>Email</label>
@@ -48,7 +51,8 @@ const Login = () => {
                     <form
                         className="flex flex-col mx-2 bg-white/10 backdrop-blur-sm  p-6 w-100 space-y-4 rounded-lg border border-white/20 shadow-lg"
                         style={{ animation: 'glow 4s infinite ease-in-out' }}>
-                        <h1 className='text-white text-3xl text-center font-bold'>Sign Up</h1>
+                            <h1 className='text-white text-3xl text-center font-bold'>Sign Up</h1>
+                            <p onClick={() => navigate('/')} className='text-green-600 underline font-semibold cursor-pointer'>Return Home</p>
                         <div>
                             <label className='text-white text-lg'>Username</label>
                             <input type="text" className='w-full bg-white/10 border border-white/20 rounded-lg p-2' placeholder='Enter your username' />

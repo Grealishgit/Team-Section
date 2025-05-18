@@ -7,6 +7,8 @@ import Login from './components/Login'
 import Contact from './pages/Contact'
 import { useLocation } from 'react-router-dom'
 import Home from './pages/Home'
+import Products from './pages/Products'
+import About from './pages/About'
 
 const App = () => {
   const location = useLocation()
@@ -22,6 +24,8 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/product" element={<Products />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   )
