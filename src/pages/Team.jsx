@@ -60,19 +60,19 @@ const Team = () => {
             }
         },
         // {
-        //   id: 4,
-        //   name: 'Bob Brown',
-        //   role: 'COO',
-        //   image: boy,
-        //   video: video1,
-        //   education: 'MBA from Wharton School',
-        //   experience: '15 years in operations management',
-        //   skills: ['Operations Strategy', 'Supply Chain Management', 'Process Improvement'],
-        //   hobbies: ['Running', 'Cycling', 'Traveling'],
-        //   socialMedia: {
-        //     linkedin: 'https://www.linkedin.com/in/bobbrown',
-        //     twitter: 'https://twitter.com/bobbrown',
-        //   }
+        //     id: 4,
+        //     name: 'Bob Brown',
+        //     role: 'COO',
+        //     image: boy,
+        //     video: video1,
+        //     education: 'MBA from Wharton School',
+        //     experience: '15 years in operations management',
+        //     skills: ['Operations Strategy', 'Supply Chain Management', 'Process Improvement'],
+        //     hobbies: ['Running', 'Cycling', 'Traveling'],
+        //     socialMedia: {
+        //         linkedin: 'https://www.linkedin.com/in/bobbrown',
+        //         twitter: 'https://twitter.com/bobbrown',
+        //     }
         // }
 
     ]
@@ -80,12 +80,12 @@ const Team = () => {
     const [selectedMember, setSelectedMember] = useState(null);
     return (
         <div
-            className='justify-center bg-center bg-cover w-full items-center bg-white/10 backdrop-blur-md border-white/20 flex flex-col min-h-screen'
+            className='justify-center bg-center bg-cover  w-full items-center bg-white/10 backdrop-blur-md border-white/20 flex flex-col min-h-screen'
         // style={{ backgroundImage: `url(${bg})` }}
         >
 
 
-            <div className='mt-10 flex flex-col items-center justify-center '>
+            <div className='md:mt-0 flex flex-col items-center mt-20 justify-center '>
                 <h2 className="relative text-white text-2xl font-semibold cursor-pointer group">
                     Meet Our Team
                     <span className="absolute left-0 bottom-0 h-1 bg-green-500 w-0 group-hover:w-full transition-all duration-300"></span>
